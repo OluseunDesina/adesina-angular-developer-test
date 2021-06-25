@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  // url: `https://pensive-bartik-cf1a05.netlify.app/db.json`
   url: `http://localhost:3000/`
 };
 

@@ -8,7 +8,7 @@ module.exports = function () {
   return {
     patients: _.times(10, function (n) {
       return {
-        "id": n,
+        "id": n, "avatar": faker.internet.avatar(),
         "name": faker.name.findName(), "gender": faker.random.arrayElement(gender), "age": faker.datatype.number(), "phoneNumber": faker.phone.phoneNumber(), "address": faker.address.streetAddress()
       }
     })

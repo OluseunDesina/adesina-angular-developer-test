@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  url: `https://pensive-bartik-cf1a05.netlify.app/db.json`
 };

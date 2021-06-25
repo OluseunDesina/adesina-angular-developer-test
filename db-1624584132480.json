@@ -1,0 +1,84 @@
+{
+  "patients": [
+    {
+      "id": 0,
+      "name": "Yvette Kertzmann",
+      "gender": "Male",
+      "age": 47539,
+      "phoneNumber": "(383) 522-2503 x1792",
+      "address": "318 Ruby Via"
+    },
+    {
+      "id": 1,
+      "name": "Candice Connelly",
+      "gender": "Female",
+      "age": 80452,
+      "phoneNumber": "1-693-548-0791",
+      "address": "4112 Shaylee Shoals"
+    },
+    {
+      "id": 2,
+      "name": "Jane Osinski",
+      "gender": "Male",
+      "age": 41669,
+      "phoneNumber": "(798) 354-7016 x21722",
+      "address": "1212 Huel Station"
+    },
+    {
+      "id": 3,
+      "name": "Bryan King Jr.",
+      "gender": "Male",
+      "age": 76742,
+      "phoneNumber": "(491) 337-6244 x658",
+      "address": "8470 Samara Manor"
+    },
+    {
+      "id": 4,
+      "name": "Ebony Thiel",
+      "gender": "Male",
+      "age": 57809,
+      "phoneNumber": "780.887.4212 x28330",
+      "address": "54006 Sandra Terrace"
+    },
+    {
+      "id": 5,
+      "name": "Mrs. Stacy Erdman",
+      "gender": "Male",
+      "age": 38639,
+      "phoneNumber": "449.296.3074 x98123",
+      "address": "63213 Jones Greens"
+    },
+    {
+      "id": 6,
+      "name": "Monique Beahan",
+      "gender": "Male",
+      "age": 16319,
+      "phoneNumber": "1-299-220-1697",
+      "address": "76578 Joanny Expressway"
+    },
+    {
+      "id": 7,
+      "name": "Lindsay Hauck",
+      "gender": "Male",
+      "age": 90587,
+      "phoneNumber": "246.245.6405",
+      "address": "5121 Hodkiewicz Wells"
+    },
+    {
+      "id": 8,
+      "name": "Jonathon Gorczany",
+      "gender": "Female",
+      "age": 90778,
+      "phoneNumber": "231-591-8465",
+      "address": "13057 Verdie Pines"
+    },
+    {
+      "id": 9,
+      "name": "Saul Bartell",
+      "gender": "Female",
+      "age": 63664,
+      "phoneNumber": "1-983-542-9953",
+      "address": "3505 Alvina Fields"
+    }
+  ]
+}

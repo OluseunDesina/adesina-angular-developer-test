@@ -9,7 +9,7 @@
     <ng-container matColumnDef="image">
       <th mat-header-cell *matHeaderCellDef> No. </th>
       <td mat-cell *matCellDef="let element">
-        <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="">
+        <img [src]="element.avatar" alt="">
       </td>
     </ng-container>
 
