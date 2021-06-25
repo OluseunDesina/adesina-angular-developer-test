@@ -1,0 +1,253 @@
+<div class="container-fluid">
+  <h1 class="display-4">Register Patient</h1>
+
+  <mat-horizontal-stepper labelPosition="bottom" [linear]="false" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Patient Details</ng-template>
+      <form [formGroup]="firstFormGroup">
+        <mat-grid-list gutterSize="24px" cols="8" rowHeight="100px">
+
+          <mat-grid-tile colspan=2 rowspan=5>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Image</mat-label>
+              <input matInput formControlName="image" required>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile colspan=1 rowspan=1>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Title</mat-label>
+              <mat-select formControlName="title">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile colspan=4 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Surname</mat-label>
+              <input matInput formControlName="lastname" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient First Name</mat-label>
+              <input matInput formControlName="firstname" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Middle Name</mat-label>
+              <input matInput formControlName="middlename" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Phone Number</mat-label>
+              <input matInput formControlName="phone" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Email</mat-label>
+              <input matInput formControlName="email" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Gender</mat-label>
+              <mat-select formControlName="gender">
+                <mat-option *ngFor="let topping of genderArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="gender" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Date of Birth(mm/dd/yy)</mat-label>
+              <input (click)="picker.open()" matInput [matDatepicker]="picker"
+                formControlName="dob" required>
+              <!-- <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle> -->
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=3 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Address</mat-label>
+              <textarea matInput formControlName="address"></textarea>
+              <!-- <input matInput formControlName="address" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <div>
+          <button class="btn btn-primary mt-100 mr-auto" mat-button matStepperNext>Continue</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- Step 2 starts here -->
+    <mat-step [stepControl]="secondFormGroup" label="Other">
+      <form [formGroup]="secondFormGroup">
+        <mat-grid-list gutterSize="24px" cols="5" rowHeight="100px">
+
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Ethnicity</mat-label>
+              <mat-select formControlName="ethnic">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="ethnic" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Religion</mat-label>
+              <mat-select formControlName="religion">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <input matInput formControlName="religion" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Marital Status</mat-label>
+              <mat-select formControlName="maritalStatus">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <input matInput formControlName="maritalStatus" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=2 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Occupation</mat-label>
+              <input matInput formControlName="occupation" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Blood Group</mat-label>
+              <input matInput formControlName="bloodGroup" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=2 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Type</mat-label>
+              <input matInput formControlName="patientType" required>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Nationality</mat-label>
+              <mat-select formControlName="nationality">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="nationality" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>State Of Origin</mat-label>
+              <mat-select formControlName="stateOfOrigin">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="stateOfOrigin" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=2 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Local Government</mat-label>
+              <mat-select formControlName="lga">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="lga" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan=2 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>State of Residence</mat-label>
+              <mat-select formControlName="stateOfResidence">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="stateOfResidence" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <div class="mt-100 mr-auto">
+          <button class="btn btn-outline-primary mr-2" mat-button matStepperPrevious>Back</button>
+          <button class="btn btn-primary" mat-button matStepperNext>Continue</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- Step 3 starts here -->
+    <mat-step [stepControl]="thirdFormGroup" label="Next of Kin">
+      <form [formGroup]="thirdFormGroup">
+        <mat-grid-list gutterSize="24px" cols="30" rowHeight="100px">
+
+          <mat-grid-tile colspan=12 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Fullname</mat-label>
+              <input matInput formControlName="fullname" required>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile colspan=6 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Relationship</mat-label>
+              <mat-select formControlName="relationship">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="relationship" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile colspan=12 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Phone</mat-label>
+              <input matInput formControlName="phone" required>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile colspan=15 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Patient Address</mat-label>
+              <textarea matInput formControlName="address" required></textarea>
+            </mat-form-field>
+          </mat-grid-tile>
+
+        </mat-grid-list>
+        <div class="mt-100 mr-auto">
+          <button class="btn btn-outline-primary mr-2" mat-button matStepperPrevious>Back</button>
+          <button class="btn btn-primary" mat-button matStepperNext>Continue</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- fourth step starts here -->
+    <mat-step>
+      <ng-template matStepLabel>HMO</ng-template>
+      <form (submit)="registerPatient()" [formGroup]="fourthFormGroup">
+        <mat-grid-list gutterSize="24px" cols="2" rowHeight="100px">
+
+          <mat-grid-tile colspan=1 rowspan=1>
+            <mat-form-field appearance="outline">
+              <mat-label>Sponor Billing Policy</mat-label>
+              <mat-select formControlName="billing">
+                <mat-option *ngFor="let topping of titleArray" [value]="topping">{{topping}}</mat-option>
+              </mat-select>
+              <!-- <input matInput formControlName="billing" placeholder="Ex. 1 Main St, New York, NY" required> -->
+            </mat-form-field>
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      </form>
+      <div class="mt-100 mr-auto">
+        <button class="btn btn-outline-primary mr-2" mat-button matStepperPrevious>Back</button>
+        <button class="btn btn-primary" mat-button matStepperNext (click)=registerPatient()>Continue</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+</div>

@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: montserrat;
+  src: url(../src/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: montserrat;
+  margin: 0;
+  padding: 0;
+}
+
+.message-dialog {
+  border: 0.3px solid #b7b7b7;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+text-primary {
+  color: #04194d;
+}
+
+.btn-primary {
+  // width: 280px;
+  // height: 68px;
+  padding: 20px 98px !important;
+  background: #2c61e4;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.btn-outline-primary {
+  // width: 280px;
+  // height: 68px;
+  padding: 20px 98px !important;
+  color: #2c61e4;
+  border: 1px solid #2c61e4 !important;
+  border-radius: 10px;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-5 {
+  margin-top: 10px !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mr-auto {
+  float: right;
+}
+
+.mr-2 {
+  margin-right: 10px !important;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+mat-form-field.mat-form-field {
+  width: 100%;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+// .container > div {
+//   text-align: center;
+//   padding: 20px 0;
+//   font-size: 30px;
+// }
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-danger {
+  font-family: montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 149.3%;
+  /* identical to box height, or 24px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #db3528 !important;
+
+  opacity: 0.8;
+}

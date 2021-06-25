@@ -1,0 +1,37 @@
+mat-toolbar {
+  height: 100px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-form-field.mat-form-field {
+  width: 630px !important;
+  font-size: 14px;
+  color: #767b95;
+  // border: 1px solid #E4E8F0;
+  // border-radius: 15px;
+  box-sizing: border-box;
+}
+
+// mat-form-field {
+//   // margin: auto;
+//   // margin-left: 30px;
+// }
+
+/* Font color */
+input.mat-input-element {
+  color: #767b95;
+}
+
+mat-label {
+  color: #767b95;
+}
+
+img {
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 20.2703px;
+}

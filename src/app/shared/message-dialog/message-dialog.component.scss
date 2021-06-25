@@ -1,0 +1,33 @@
+.message {
+  // position: absolute;
+  padding-top: 80px;
+  // width: 341px;
+  // height: 33px;
+
+  font-family: montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 149.3%;
+  /* identical to box height, or 33px */
+
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #04194d;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 280px;
+  height: 68px;
+
+  background: #2c61e4;
+  border-radius: 10px;
+  color: #ffffff;
+}
