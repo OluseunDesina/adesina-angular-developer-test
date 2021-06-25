@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    this.router.navigate(["/parent-list"])
+    this.router.navigate(["/patient-list"])
   }
 
 }
