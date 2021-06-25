@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,8 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -19,6 +21,10 @@ export class LoginComponent implements OnInit {
       email:[""],
       password:[""],
     })
+  }
+
+  onLogin() {
+    this.router.navigate(["/parent-list"])
   }
 
 }

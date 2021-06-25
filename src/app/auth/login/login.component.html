@@ -1,58 +1,3 @@
-<!--
-<div class="container">
-  <div class="item1">
-    <app-auth-navbar></app-auth-navbar>
-  </div>
-  <div class="item3">
-    <img class="center-image" src="../../../assets/images/login_banner.png" alt="">
-      <h2 class="text-center">
-        Lorem ipsum
-      </h2>
-
-      <p class="text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing.
-      </p>
-  </div>
-  <div class="item4">
-    <form [formGroup]="loginForm">
-      <h1 class="text-center">
-        Sign in your EHR account
-      </h1>
-      <mat-form-field appearance="outline">
-        <mat-label>Email</mat-label>
-        <input formControlName="email" matInput type="text">
-      </mat-form-field>
-
-      <mat-form-field appearance="outline">
-        <mat-label>Password</mat-label>
-        <input  formControlName="password" matInput [type]="hide ? 'password' : 'text'">
-        <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </button>
-      </mat-form-field>
-
-      <a>Forgot password?</a>
-
-      <div class="center mt-50">
-        <button class="btn btn-primary btn-block">
-          Sign in
-        </button>
-
-        <p class="text-center text-lead">
-          Dont have an account?<span class="bold">Meet up with the IT guy</span>
-        </p>
-      </div>
-    </form>
-  </div>
-</div> -->
-<!-- <mat-grid-list cols="5" rowHeight="90vh">
-  <mat-grid-tile colspan=2 row=1>
-  </mat-grid-tile>
-  <mat-grid-tile colspan=3 row=1>
-  </mat-grid-tile>
-</mat-grid-list> -->
-
-
 <div class="grid-container">
   <div class="item4">
     <img class="center-image" src="../../../assets/images/Mask Group.png" alt="">
@@ -84,7 +29,7 @@
       <p class="text-left text-danger">Forgot password?</p>
 
       <div class="mt-50">
-        <button class="btn btn-primary btn-block">
+        <button (click)="onLogin()" class="btn btn-primary btn-block">
           Sign in
         </button>
 
